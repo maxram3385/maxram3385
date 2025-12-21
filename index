@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <!--
@@ -38,7 +38,7 @@
         <h2>About</h2>
       </header>
       <p>
-        I’m an Information Technology student learning the fundamentals of building web pages with HTML.
+        I’m a Software Development student learning the fundamentals of building web pages with HTML.
         I enjoy creative projects, problem solving, and learning new technical skills.
       </p>
     </section>
@@ -58,7 +58,7 @@
         <h2>Contact</h2>
       </header>
       <p>
-        You can reach me by email at: <a href="mailto:yourname@example.com">yourname@example.com</a>
+        You can reach me by email at: <a href="mailto:maxram3385@students.ecpi.edu">maxram3385@students.ecpi.edu</a>
       </p>
     </section>
   </main>
