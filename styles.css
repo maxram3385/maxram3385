@@ -14,13 +14,13 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif; /* web-safe font */
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: #1f2937;
 
-  /* background color/gradient requirement */
-  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  background: linear-gradient(135deg, #7fffd4, #bfffeF);
 }
+
 
 /* ===== Header ===== */
 .site-header {
