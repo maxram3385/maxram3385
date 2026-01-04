@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*
+  2.9 Project - CSS3 Styling
+  Author: Max Ramos
+  Date: 1/4/26
+  Filename: styles.css
+*/
+
+/* ===== Background + Font ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; /* web-safe font */
+  line-height: 1.6;
+  color: #1f2937;
+
+  /* background color/gradient requirement */
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+/* ===== Header ===== */
+.site-header {
+  text-align: center;        /* align text center */
+  padding: 28px 16px;        /* padding requirement */
+  background-color: #0f172a; /* header background color */
+  color: #f8fafc;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;           /* change font size */
+  font-weight: 800;          /* change weight */
+  letter-spacing: 0.5px;
+}
+
+.intro {
+  max-width: 760px;
+  margin: 10px auto 18px;
+  opacity: 0.92;
+}
+
+/* ===== Navigation Menu (Horizontal, No Bullets, Hover Effects) ===== */
+.site-nav ul {
+  list-style: none;          /* remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;             /* horizontal */
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;           /* stays clean on small screens */
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #f8fafc;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.site-nav a:hover {
+  background-color: #2563eb; /* hover background */
+  transform: translateY(-1px);
+}
+
+/* ===== Main Sections (Padding/Margin + Border/Shadow/Background) ===== */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 22px 16px 40px;
+}
+
+.card {
+  background-color: #ffffff;             /* distinguish content area */
+  margin: 16px 0;                        /* margin requirement */
+  padding: 18px;                         /* padding requirement */
+  border: 1px solid #d1d5db;             /* border */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* box shadow */
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+/* Link styling */
+a {
+  color: #2563eb;
+}
+a:hover {
+  color: #1d4ed8;
+}
+
+/* ===== Footer (Smaller font + Center + Contrasting colors) ===== */
+.site-footer {
+  text-align: center;        /* center text */
+  font-size: 0.9rem;         /* smaller font */
+  padding: 16px;
+  background-color: #111827; /* contrasting background */
+  color: #e5e7eb;            /* contrasting text */
+}
