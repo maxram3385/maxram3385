@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /*
-  2.9 Project - CSS3 Styling
   Author: Max Ramos
   Date: 1/4/26
   Filename: styles.css
@@ -109,4 +108,51 @@ a:hover {
   padding: 16px;
   background-color: #111827; /* contrasting background */
   color: #e5e7eb;            /* contrasting text */
+}
+/* ===== Main Content Section Interactivity (Zoom on Hover) ===== */
+.card {
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Projects Table Styling ===== */
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+}
+
+.projects-table caption {
+  font-weight: 700;
+  text-align: left;
+  padding: 8px 0;
+}
+
+.projects-table th,
+.projects-table td {
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.projects-table thead th {
+  background-color: #e5e7eb;
+}
+
+/* Applies background to the 1st and 3rd columns via <col class="col-accent"> */
+.projects-table .col-accent {
+  background-color: #f3f4f6;
+}
+
+/* Image placeholder box */
+.img-placeholder {
+  border: 2px dashed #9ca3af;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: #374151;
 }
