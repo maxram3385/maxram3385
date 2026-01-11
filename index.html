@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!--
-    Student Homepage (GitHub Pages)
+    Student Homepage 
     Author: Max Ramos
     Date: 12/20/2025
     File: index.html
@@ -54,6 +54,56 @@
         Here are a few things I’m currently working on: basic HTML assignments, database coursework,
         and personal creative projects like music and content.
       </p>
+
+      <!-- Projects Table (required for assignment) -->
+      <table class="projects-table">
+        <caption>Sample Projects</caption>
+
+        <!-- colgroup/col applies background color to the 1st and 3rd columns -->
+        <colgroup>
+          <col class="col-accent">
+          <col>
+          <col class="col-accent">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>BucePlant Fish Shop Concept</td>
+            <td>
+              A storefront-style layout for browsing aquarium fish, plants, and supplies with
+              category navigation and featured listings.
+            </td>
+            <td>
+              <div class="img-placeholder" aria-label="Image placeholder">Image</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Spotify Artist Spotlight</td>
+            <td>
+              A music discovery page highlighting an artist, featured tracks, and curated playlists
+              in a simple, scroll-friendly layout.
+            </td>
+            <td>
+              <div class="img-placeholder" aria-label="Image placeholder">Image</div>
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">Showing 2 sample projects</td>
+          </tr>
+        </tfoot>
+      </table>
     </section>
 
     <section id="contact" class="card">
@@ -72,3 +122,4 @@
   </footer>
 </body>
 </html>
+
