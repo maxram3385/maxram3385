@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <!--
-    Portfolio Homepage
+    Personal Homepage / Portfolio
     Author: Max Ramos
-    Date: 1/2026
+    Date: 1/12/2026
     File: index.html
   -->
 
   <meta charset="utf-8">
-  <meta name="description" content="Portfolio for Max Ramos featuring aquariums and music projects.">
-  <meta name="keywords" content="Max Ramos, portfolio, aquariums, music">
+  <meta name="description" content="Portfolio homepage for Max Ramos featuring music and aquarium work.">
+  <meta name="keywords" content="Max Ramos, portfolio, music, aquariums, HTML, GitHub Pages">
   <meta name="author" content="Max Ramos">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Max Ramos | Portfolio</title>
+  <title>Max Ramos | Home</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,29 +24,32 @@
     <p class="intro">Quick intro to who I am, what I’m working on, and how to reach me.</p>
   </header>
 
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Primary">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#music">Music</a></li>
       <li><a href="#aquariums">Aquariums</a></li>
-
-      <!-- REQUIRED: opens contact.html in new tab -->
-      <li><a href="contact.html" target="_blank" rel="noopener">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main class="content">
     <section id="about" class="card">
-      <header><h2>About</h2></header>
+      <header>
+        <h2>About</h2>
+      </header>
       <p>
-        I’m Max Ramos. I like building things and learning new skills. This site is a simple place
-        to collect highlights and keep everything easy to find.
+        I’m Max Ramos. I like building things and learning new skills. This site is a simple place to
+        collect highlights and keep everything easy to find.
       </p>
     </section>
 
+    <!-- MUSIC TABLE (priority 1) -->
     <section id="music" class="card">
-      <header><h2>Music</h2></header>
-      <p>A few tracks and ideas I’ve been working on.</p>
+      <header>
+        <h2>Music</h2>
+      </header>
+      <p>A few tracks and cover concepts I’m working on right now.</p>
 
       <table class="projects-table">
         <caption>Music Projects</caption>
@@ -70,9 +73,7 @@
             <td>Room</td>
             <td>A sometimes upbeat, sing/rap track with a heavy breakdown.</td>
             <td>
-              <img class="projImg"
-                   src="images/imagesmusic-room.jpg.jpeg"
-                   alt="Room cover art">
+              <img class="thumb" src="images/imagesmusic-room.jpg" alt="Room cover art">
             </td>
           </tr>
 
@@ -80,24 +81,27 @@
             <td>Shadeofblue</td>
             <td>A jumpy and energetic song/rap with interesting dynamic energy.</td>
             <td>
-              <div class="imgStack">
-                <img class="projImg"
-                     src="images/imagesmusic-shadeofblue.jpg.jpeg"
-                     alt="Shadeofblue cover art">
-                <img class="projImgSmall"
-                     src="images/imagesmusic-shadeofblue-alt.jpg.jpeg"
-                     alt="Shadeofblue alternate cover art">
-              </div>
-              <div class="imgNote">Alt cover</div>
+              <img class="thumb" src="images/imagesmusic-shadeofblue.jpg" alt="Shadeofblue cover art">
+            </td>
+          </tr>
+
+          <tr>
+            <td>Shadeofblue (Alt Art)</td>
+            <td>Alternate cover concept for Shadeofblue.</td>
+            <td>
+              <img class="thumb" src="images/imagesmusic-shadeofblue-alt.jpg" alt="Shadeofblue alternate cover art">
             </td>
           </tr>
         </tbody>
       </table>
     </section>
 
+    <!-- AQUARIUMS TABLE (priority 2) -->
     <section id="aquariums" class="card">
-      <header><h2>Aquariums</h2></header>
-      <p>Featured aquarium builds.</p>
+      <header>
+        <h2>Aquariums</h2>
+      </header>
+      <p>Some personal builds and client work.</p>
 
       <table class="projects-table">
         <caption>Aquarium Projects</caption>
@@ -119,41 +123,33 @@
         <tbody>
           <tr>
             <td>Personal Projects</td>
-            <td>75 gallon high tech angelfish tank</td>
+            <td>75 gallon high tech angelfish tank.</td>
             <td>
-              <img class="projImg"
-                   src="images/imagestank-75-angels.jpg.jpeg"
-                   alt="75 gallon high tech angelfish tank">
+              <img class="thumb" src="images/imagestank-75-angels.jpg" alt="75 gallon high tech angelfish tank">
             </td>
           </tr>
 
           <tr>
             <td>Client Project</td>
-            <td>68 gallon high tech planted Glo/Angelfish tank</td>
+            <td>68 gallon high tech planted Glo/Angelfish tank.</td>
             <td>
-              <img class="projImg"
-                   src="images/imagesclient-68-glo.jpg.jpeg"
-                   alt="68 gallon high tech planted Glo and angelfish tank">
+              <img class="thumb" src="images/imagesclient-68-glo.jpg" alt="68 gallon high tech planted Glo/Angelfish tank">
             </td>
           </tr>
 
           <tr>
             <td>Personal Project</td>
-            <td>Saltwater planted macroalgae tank</td>
+            <td>Saltwater planted macroalgae tank.</td>
             <td>
-              <img class="projImg"
-                   src="images/imagesmacroalgae-salt.jpg.jpeg"
-                   alt="Saltwater planted macroalgae tank">
+              <img class="thumb" src="images/imagesmacroalgae-salt.jpg" alt="Saltwater planted macroalgae tank">
             </td>
           </tr>
 
           <tr>
-            <td>Personal Project</td>
-            <td>Planted tank with rock background</td>
+            <td>Planted Rock Layout</td>
+            <td>Planted rockscape build.</td>
             <td>
-              <img class="projImg"
-                   src="images/imagesplanted-rock.jpg.jpeg"
-                   alt="Planted tank with rock background">
+              <img class="thumb" src="images/imagesplanted-rock.jpg" alt="Planted rock aquarium">
             </td>
           </tr>
         </tbody>
@@ -161,16 +157,16 @@
     </section>
 
     <section id="contact" class="card">
-      <header><h2>Contact</h2></header>
+      <header>
+        <h2>Contact</h2>
+      </header>
 
-      <!-- REQUIRED: Contact link inside #contact section -->
       <p>
-        Open the contact form here:
-        <a href="contact.html" target="_blank" rel="noopener">contact.html</a>
+        You can <a href="contact.html" target="_blank" rel="noopener">contact me here</a>.
       </p>
 
-      <p>
-        You can also reach me by email at:
+      <p class="small-note">
+        (Assignment email)
         <a href="mailto:maxram3385@students.ecpi.edu">maxram3385@students.ecpi.edu</a>
       </p>
     </section>
@@ -181,5 +177,3 @@
   </footer>
 </body>
 </html>
-
-
