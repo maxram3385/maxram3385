@@ -2,59 +2,100 @@
 <html lang="en">
 <head>
   <!--
-    Homepage / Portfolio
+    Portfolio Homepage
     Author: Max Ramos
-    Date: 12/20/2025
+    Date: 1/2026
     File: index.html
   -->
 
   <meta charset="utf-8">
-  <meta name="description" content="Homepage for Max Ramos featuring portfolio highlights and contact information.">
-  <meta name="keywords" content="Max Ramos, portfolio, web, HTML, projects">
+  <meta name="description" content="Portfolio for Max Ramos featuring aquariums and music projects.">
+  <meta name="keywords" content="Max Ramos, portfolio, aquariums, planted tanks, angelfish, music">
   <meta name="author" content="Max Ramos">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Max Ramos | Home</title>
+  <title>Max Ramos | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="site-header">
     <h1>Max Ramos</h1>
-    <p class="intro">
-      Quick intro to who I am, what I’m working on, and how to reach me.
-    </p>
+    <p class="intro">Aquariums + music. This is where I keep the highlights.</p>
   </header>
 
   <nav class="site-nav">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#aquariums">Aquariums</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main class="content">
-    <section id="about" class="card">
+    <!-- MUSIC TABLE (priority #1) -->
+    <section id="music" class="card">
       <header>
-        <h2>About</h2>
+        <h2>Music</h2>
       </header>
-      <p>
-        I’m Max Ramos. I like building things and learning new skills. This site is a simple place to collect
-        highlights and keep everything easy to find.
-      </p>
-    </section>
-
-    <section id="projects" class="card">
-      <header>
-        <h2>Portfolio</h2>
-      </header>
-      <p>
-        A few highlights I’m working on right now. (More coming soon.)
-      </p>
+      <p>A few tracks and ideas I’ve been working on.</p>
 
       <table class="projects-table">
-        <caption>Featured Work</caption>
+        <caption>Music Projects</caption>
+
+        <colgroup>
+          <col class="col-accent">
+          <col>
+          <col class="col-accent">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Room</td>
+            <td>A sometimes upbeat, sing/rap track with a heavy breakdown.</td>
+            <td>
+              <img class="projImg"
+                   src="images/music-room.jpg"
+                   alt="Room cover art">
+            </td>
+          </tr>
+
+          <tr>
+            <td>Shadeofblue</td>
+            <td>A jumpy and energetic song/rap with interesting dynamic energy.</td>
+            <td>
+              <div class="imgStack">
+                <img class="projImg"
+                     src="images/music-shadeofblue.jpg"
+                     alt="Shadeofblue cover art">
+                <img class="projImgSmall"
+                     src="images/music-shadeofblue-alt.jpg"
+                     alt="Shadeofblue alternate cover art">
+              </div>
+              <div class="imgNote">Alt cover</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- AQUARIUM TABLE (priority #2) -->
+    <section id="aquariums" class="card">
+      <header>
+        <h2>Aquariums</h2>
+      </header>
+      <p>Featured aquarium builds.</p>
+
+      <table class="projects-table">
+        <caption>Aquarium Projects</caption>
 
         <colgroup>
           <col class="col-accent">
@@ -74,19 +115,41 @@
           <tr>
             <td>Personal Projects</td>
             <td>75 gallon high tech angelfish tank</td>
-            <td><div class="img-placeholder" aria-label="Image placeholder">Image</div></td>
+            <td>
+              <img class="projImg"
+                   src="images/tank-75-angels.jpg"
+                   alt="Personal Projects: 75 gallon high tech angelfish tank">
+            </td>
           </tr>
 
           <tr>
             <td>Client Project</td>
             <td>68 gallon high tech planted Glo/Angelfish tank</td>
-            <td><div class="img-placeholder" aria-label="Image placeholder">Image</div></td>
+            <td>
+              <img class="projImg"
+                   src="images/client-68-glo.jpg"
+                   alt="Client: 68 gallon high tech planted Glo and angelfish tank">
+            </td>
           </tr>
 
           <tr>
             <td>Personal Project</td>
-            <td>Saltwater planted macroalgae tank</td>
-            <td><div class="img-placeholder" aria-label="Image placeholder">Image</div></td>
+            <td>Personal saltwater planted macroalgae tank</td>
+            <td>
+              <img class="projImg"
+                   src="images/macroalgae-salt.jpg"
+                   alt="Personal: saltwater planted macroalgae tank">
+            </td>
+          </tr>
+
+          <tr>
+            <td>Personal Project</td>
+            <td>Planted tank with rock background</td>
+            <td>
+              <img class="projImg"
+                   src="images/planted-rock.jpg"
+                   alt="Personal: planted tank with rock background">
+            </td>
           </tr>
         </tbody>
       </table>
@@ -108,3 +171,4 @@
   </footer>
 </body>
 </html>
+
