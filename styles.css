@@ -6,7 +6,6 @@
   Filename: styles.css
 */
 
-/* ===== Theme Colors ===== */
 :root{
   --black: #070A0F;
   --black2: #0B1020;
@@ -20,7 +19,6 @@
   --border: rgba(125,211,252,0.25);
 }
 
-/* ===== Global ===== */
 *{ box-sizing: border-box; }
 
 body{
@@ -29,27 +27,15 @@ body{
   line-height: 1.6;
   color: var(--text);
 
-  /* Background image + overlay (put bg.jpg in /images) */
-  background:
-    linear-gradient(rgba(7,10,15,0.88), rgba(7,10,15,0.92)),
-    url("images/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/* If you DON'T have a background image yet, use this instead:
-body{
+  /* Assignment-safe: no image needed */
   background: linear-gradient(180deg, var(--black2), var(--black));
 }
-*/
 
-/* ===== Header ===== */
+/* Header */
 .site-header{
   text-align: center;
   padding: 36px 16px;
   background: linear-gradient(180deg, rgba(11,16,32,0.95), rgba(7,10,15,0.30));
-  color: var(--text);
   border-bottom: 1px solid rgba(212,175,55,0.25);
 }
 
@@ -66,14 +52,7 @@ body{
   color: var(--muted);
 }
 
-/* ===== Navigation ===== */
-.site-nav{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-}
-
+/* Nav */
 .site-nav ul{
   list-style: none;
   margin: 0;
@@ -102,7 +81,7 @@ body{
   transform: translateY(-1px);
 }
 
-/* ===== Main Content ===== */
+/* Layout */
 .content{
   max-width: 900px;
   margin: 0 auto;
@@ -119,9 +98,7 @@ body{
   transition: transform 0.25s ease;
 }
 
-.card:hover{
-  transform: scale(1.02);
-}
+.card:hover{ transform: scale(1.02); }
 
 .card h2{
   margin-top: 0;
@@ -129,11 +106,10 @@ body{
   color: var(--gold);
 }
 
-/* Links */
 a{ color: var(--babyblue); }
 a:hover{ color: var(--gold); }
 
-/* ===== Footer ===== */
+/* Footer */
 .site-footer{
   text-align: center;
   font-size: 0.9rem;
@@ -143,7 +119,7 @@ a:hover{ color: var(--gold); }
   border-top: 1px solid rgba(212,175,55,0.20);
 }
 
-/* ===== Projects Table ===== */
+/* Table */
 .projects-table{
   width: 100%;
   border-collapse: collapse;
@@ -167,14 +143,12 @@ a:hover{ color: var(--gold); }
 
 .projects-table thead th{
   background-color: rgba(212,175,55,0.16);
-  color: var(--text);
 }
 
 .projects-table .col-accent{
   background-color: rgba(255,255,255,0.04);
 }
 
-/* Placeholder */
 .img-placeholder{
   border: 2px dashed rgba(125,211,252,0.45);
   border-radius: 10px;
